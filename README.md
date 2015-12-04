@@ -17,7 +17,7 @@ Whenever a new module is created, it must first be "standardized" before it is "
 Folder structure:
 ___
 
-
+<code>
 modules/
     newModule/
         css/
@@ -31,7 +31,7 @@ modules/
            newModule--custom.tpl.php
         newModule.php
         README.md
-
+</code>
 
 
 
