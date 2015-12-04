@@ -17,21 +17,19 @@ Whenever a new module is created, it must first be "standardized" before it is "
 Folder structure:
 ___
 
-*modules/
-*    newModule/
-*        css/
-*           newModule--custom.scss
-*           newModule--default.scss
-*        js/
-*           newModule--custom.js
-*           newModule--default.js
-*        tpl
-*           newModule--default.tpl.php
-*           newModule--custom.tpl.php
-*        newModule.php
-*        README.md
-
-
+modules/<br/>
+&nbsp;&nbsp;newModule/<br/>
+&nbsp;&nbsp;css/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;newModule--custom.scss<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;newModule--default.scss<br/>
+&nbsp;&nbsp;js/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;newModule--custom.js<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;newModule--default.js<br/>
+&nbsp;&nbsp;tpl<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;newModule--default.tpl.php<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;newModule--custom.tpl.php<br/>
+&nbsp;&nbsp;newModule.php<br/>
+&nbsp;&nbsp;README.md<br/>
 
 
 README.md SAMPLE Table of Contents
