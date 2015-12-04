@@ -11,7 +11,6 @@ Whenever a new module is created, it must first be "standardized" before it is "
 * All new functionality must be added as options on the controller file.
 * All ACF fields must follow a BEM naimg structure.
 * All files must contain clear comments that are easy to follow
-* If a post type is requried for your module, the post type must be created within the controller file.
 
 
 Folder structure:
