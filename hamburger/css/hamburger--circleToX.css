@@ -1,0 +1,78 @@
+.hamburger--circleToX {
+	font-size: 8px;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: 6.8em;
+  height: 6.8em;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.hamburger--circleToX .hamburger--circleToX__top,
+.hamburger--circleToX .hamburger--circleToX__bottom {
+  position: absolute;
+  display: block;
+  height: .4em;
+  width: 3.6em;
+  border-radius: .2em;
+  background: #57B0B2;
+}
+
+.hamburger--circleToX .hamburger--circleToX__top {
+  top: 1.9em;
+  left: 1.4em;
+}
+
+.hamburger--circleToX .hamburger--circleToX__bottom {
+  top: 4.1em;
+  left: 1.4em;
+}
+
+.hamburger--circleToX path,
+.hamburger--circleToX line {
+  stroke: #57B0B2;
+  stroke-linecap: round;
+}
+
+.hamburger--circleToX .hamburger--circleToX__top,
+.hamburger--circleToX .hamburger--circleToX__bottom {
+  -webkit-transform-origin: 3.4em .2em;
+      -ms-transform-origin: 3.4em .2em;
+          transform-origin: 3.4em .2em;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 500ms cubic-bezier(0.8, -1.1, 0.5, 1.9);
+          transition: all 500ms cubic-bezier(0.8, -1.1, 0.5, 1.9);
+}
+
+.hamburger--circleToX .hamburger--circleToX__circle {
+  stroke-dasharray: 1 100 32 300;
+  stroke-dashoffset: 101;
+  -webkit-transition: all 750ms ease;
+          transition: all 750ms ease;
+}
+
+.hamburger--circleToX--closed  .hamburger--circleToX__circle {
+  stroke-dasharray: 1 100 190 300;
+  stroke-dashoffset: 1;
+}
+
+.hamburger--circleToX--closed .hamburger--circleToX__top {
+  -webkit-transform: translateX(-.45em) rotate(-45deg);
+      -ms-transform: translateX(-.45em) rotate(-45deg);
+          transform: translateX(-.45em) rotate(-45deg);
+}
+
+.hamburger--circleToX--closed .hamburger--circleToX__bottom {
+  -webkit-transform: translateX(-.45em) rotate(45deg);
+      -ms-transform: translateX(-.45em) rotate(45deg);
+          transform: translateX(-.45em) rotate(45deg);
+}
