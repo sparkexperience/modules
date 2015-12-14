@@ -1,0 +1,87 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+	z-index: 21;
+	visibility: hidden;
+	transform: translateY(-100%);
+	transition: all .00001s linear;
+	transition-delay: 1s;
+	.modal--inner {
+		background: rgba(0,0,0, .5);
+		display: table;
+		vertical-align: middle;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: all .15s cubic-bezier(.17,.67,.3,.37) .45s;
+	}
+	.modal__content {
+		display: table-cell;
+    	vertical-align: middle;
+    	padding: 1rem;
+    	width: 100%;
+    	opacity: 0;
+    	transition: all .15s ease .25s;
+	}
+	.modal__content--inner {
+		max-width: 519px;
+		width: 80%;
+    	margin: 0 auto;
+    	background: #fff;
+    	padding: 1rem;
+    	position: relative;
+    	@media ( max-width: 840px) {
+			width: 100%;
+		}
+	}
+	// animated
+	&.animated {
+		visibility: visible;
+		transform: translateY(0);
+		transition-delay: 0s;
+		.modal--inner,
+		.modal__content {
+			opacity: 1;
+			visibility: visible;
+		}
+		.modal--inner {
+			transition: all .15s cubic-bezier(.17,.67,.3,.37) .25s;
+		}
+		.modal__content {
+			transition: all .25s ease .45s;
+		}
+	}
+}
+
+.modal__close {
+	border-radius: 100%;
+	padding: 1rem;
+	text-align: center;
+	position: absolute;
+	z-index: 12;
+	right: 4px;
+	top: 4px;
+	cursor: pointer;
+	&:before {
+        content: '\00d7';
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 2rem;
+	    color: white;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%,-50%);
+	    font-weight: 800;
+	    color: $light-grey;
+    }
+    &:hover {
+		color: $primary;
+    }
+}
+@import 'newsletter-signup.scss';
+@import 'callOutBanner.scss';

@@ -1,0 +1,61 @@
+// newsletter
+#success_message {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: block;
+    h3 {
+	    font-size: 2rem;
+	    color: $primary;
+	}
+}
+span.checkmark {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background: $primary;
+    display: block;
+    border-radius: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+    &:after {
+    	content: "\2714";
+	    display: block;
+	    font-size: 3rem;
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    transform: translate(-50%,-50%);
+	    color: white;
+    }
+}
+
+.ctct-custom-form {
+	min-width: 0 !important;
+	h2 {
+		font-size: 1rem;
+		margin-bottom: .5rem !important;
+	}
+	div {
+		margin: .5rem 0;
+		span {
+			margin-left: .5rem;
+		}
+	}
+	p {
+		margin-bottom: .5rem !important;
+	}
+	button {
+		border-top: none !important;
+		border-left: none !important;
+		border-right: none !important;
+	}
+}
+.ctct-custom-form input[type="text"] {
+	font-size: .7rem !important;
+	border-radius: 0 !important;
+	&:focus {
+		outline: 0 !important;
+		border-color: $primary !important;
+	}
+}

@@ -1,0 +1,45 @@
+.callOutBanner__image {
+    @extend .shadow;
+}
+
+.callOutBanner__title--green {
+    color: $primary;
+}
+
+.callOutBanner__content {
+    @extend .shadow;
+    p {
+        @extend .proxima-nova;
+        color: $dark-grey;
+    }
+}
+
+.callOutBanner__content {
+    h5 {
+        @extend .clarendon;
+    }
+}
+
+.callOutBanner__content--video {
+    .callOutBanner__titleWrapper {
+        background: $light-saturated-green;
+        h6 {
+            color: $secondary-light;
+        }
+    }
+    .callOutBanner__title--green {
+        color: $primary;
+    }
+}
+
+.callOutBanner__button--green {
+    @extend .proxima-nova;
+    background: $primary;
+    color: #fff;
+}
+
+.callOutBanner__playbtn--green {
+    svg {
+        fill: $primary;
+    }
+}

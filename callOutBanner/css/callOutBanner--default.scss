@@ -1,0 +1,101 @@
+.callOutBanner__container {
+    @extend .container;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.callOutBanner__image {
+    background: #fff;
+    max-width: 34.6rem;
+    padding: .4rem .4rem 0rem .4rem;
+}
+
+.callOutBanner__image {
+    img {
+        max-width: 100%;
+    }
+    @media screen and (max-width: 700px){
+        display: none;
+    }
+}
+
+.callOutBanner__content {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    background: #fff;
+    padding: 2rem;
+    max-width: 28.75rem;
+    @media screen and (max-width: 700px){
+        right: 0;
+        max-width: 100%;
+        position: static;
+        padding: 1rem;
+    }
+    p {
+        padding: .5rem 0;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    h6 {
+        @extend .proxima-nova;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    h5 {
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+.callOutBanner__content--video {
+    padding: .5rem;
+    max-width: 32rem;
+    @media screen and (max-width: 700px){
+        max-width: 100%;
+    }
+    p {
+        padding: 1.3rem 1.6rem;
+        @media screen and (max-width: 500px){
+            padding: .7rem .9rem 0 .9rem;
+        }
+
+    }
+    .callOutBanner__titleWrapper {
+        padding: 1rem;
+        background: $light-grey;
+    }
+    .callOutBanner__playbtn {
+        svg {
+            width: 3.35rem;
+            height: 3.35rem;
+        }
+    }
+    .callOutBanner__titleWrapper--left {
+        display: inline-block;
+        width: 3.35rem;
+        @media screen and (max-width: 500px){
+            display: block;
+            margin: 0 auto;
+        }
+
+    }
+    .callOutBanner__titleWrapper--right {
+        display: inline-block;
+        width: calc(100% - 6rem);
+        margin-left: .8rem;
+        vertical-align: top;
+        @media screen and (max-width: 500px){
+            display: block;
+            margin-left: 0;
+            width: 100%;
+        }
+
+    }
+
+}
+
+.callOutBanner__button {
+    font-size: .75rem;
+}
